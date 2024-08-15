@@ -1,0 +1,402 @@
+/* Custom CSS to center the navigation links */
+.navbar-nav {
+    margin: auto;
+}
+/* Custom CSS to ensure the Get Started button aligns to the right */
+.ml-auto {
+    margin-left: auto;
+}
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.carousel-caption .btn {
+    margin-top: 20px;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2; /* Ensure text is above overlay */
+}
+
+/* 3 */
+
+  /* About Us Section Styles */
+  .about-us-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-us-section .nav-tabs .nav-link {
+    font-weight: bold;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.about-us-section .nav-tabs .nav-link.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+.about-us-section .tab-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-us-section .tab-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.about-us-section .tab-content .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.about-us-section .tab-content .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.about-us-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+/* 4 */
+  /* Our Services Section Styles */
+  .services-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services-section p.lead {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.service-box {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.service-box .btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.service-box .btn:hover {
+    background-color: #0056b3;
+}
+
+/* 5 */
+   /* Our Projects Section Styles */
+   .projects-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projects-section .nav-tabs {
+    justify-content: center;
+    border-bottom: none;
+    margin-bottom: 40px;
+}
+
+.projects-section .nav-tabs .nav-link {
+    font-weight: bold;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.projects-section .nav-tabs .nav-link.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+.projects-section .tab-content {
+    position: relative;
+}
+
+.projects-section .project-image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.projects-section .project-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.projects-section .project-image:hover img {
+    transform: scale(1.1);
+}
+
+.projects-section .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    text-align: center;
+}
+
+.projects-section .project-image:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Custom Layout for Images */
+/* .projects-section .row .col-md-4:nth-child(2) .project-image {
+    transform: translateY(-20px);
+}
+
+.projects-section .row:nth-child(2) .col-md-4:nth-child(1) .project-image,
+.projects-section .row:nth-child(2) .col-md-4:nth-child(3) .project-image {
+    transform: translateY(20px);
+}  */
+
+.projects-section {
+    background-color: #f8f9fa;
+}
+
+.nav-tabs .nav-link {
+    color: #495057;
+    border: none;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    border-bottom: 3px solid #0d6efd;
+    background-color: transparent;
+}
+
+.project-image {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-image img {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.project-image:hover img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project-image:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-overlay p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .project-overlay h4 {
+        font-size: 1.25rem;
+    }
+
+    .project-overlay p {
+        font-size: 0.875rem;
+    }
+}
+
+
+
+/* 6 */
+
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.contact-section .form-control {
+    border-radius: 0.25rem;
+    box-shadow: none;
+}
+
+.contact-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 7 */
+
+.footer {
+    padding: 40px 0;
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin: 0 0 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .fab {
+    font-size: 20px;
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website with HTML, CSS, JavaScript & Bootstrap 😊🚀</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTfaGZDX16PvpyjUEYc2_esZoAN7Oa0NHSwg&s" alt="Logo" width="50" height="50">
+           <span>🚀</span>
+            </a>
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Service 1</a>
+                            <a class="dropdown-item" href="#">Service 2</a>
+                            <a class="dropdown-item" href="#">Service 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Get Started Button -->
+                <a href="#" class="btn btn-primary ml-auto">Get Started</a>
+            </div>
+        </nav>
+
+   
+    </div>
+<!-- 2 -->
+<div id="heroCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#heroCarousel" data-slide-to="1"></li>
+        <li data-target="#heroCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230408/pngtree-rainbow-curves-abstract-colorful-background-image_2164067.jpg');">
+            <div class="carousel-caption">
+                <h1>Slide 1 Heading</h1>
+                <p>First line of text<br>Second line of text</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL3Jhd3BpeGVsX29mZmljZV8zNF9hYnN0cmFjdF9uZW9uX2JhY2tncm91bmRfd2l0aF9kdXN0X2JhY2tncm91bl9iMDlhYmRiZC0xYjBmLTQ1M2YtYmUyMS0yZWQ5OGI5MDMzYWRfMS5qcGc.jpg');">
+            <div class="carousel-caption">
+                <h1>Slide 2 Heading</h1>
+                <p>First line of text<br>Second line of text</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHjcveQNHKTEu4_piG50AUuAHBe6Bu6bFrCAWxY8W5ZGXqkOusTO-yGxdz4lcTYhuQ6Uk&usqp=CAU');">
+            <div class="carousel-caption">
+                <h1>Slide 3 Heading</h1>
+                <p>First line of text<br>Second line of text</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- 3 -->
+
+<section class="about-us-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side: Tabs -->
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <ul class="nav nav-tabs" id="aboutTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="company-tab" data-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Our Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Our Vision</a>
+                    </li>
+                </ul>
+                <div class="tab-content mt-4" id="aboutTabsContent">
+                    <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                        <h3>Our Company</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                        <h3>Our Mission</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                        <h3>Our Vision</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side: Image -->
+            <div class="col-md-6 text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_STBffF6gfqJKkjU0rEgZ8pDe_P-x__FKug&s" alt="About Us Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 4 -->
+
+<section class="services-section">
+    <div class="container">
+        <h2>Our Services</h2>
+        <p class="lead">We offer a range of high-quality services to meet your needs, providing exceptional value and satisfaction.</p>
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Service 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Service 2</h3>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Service 3</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Service 4 -->
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Service 4</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Service 5</h3>
+                    <p>Excepteur sint occaecat cupidatat non proident.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Service 6</h3>
+                    <p>Sunt in culpa qui officia deserunt mollit anim.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5 -->
+
+<section class="projects-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Projects</h2>
+        <ul class="nav nav-tabs justify-content-center" id="projectsTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="all-tab" data-bs-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="app-tab" data-bs-toggle="tab" href="#app" role="tab" aria-controls="app" aria-selected="false">App</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="product-tab" data-bs-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="false">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="branding-tab" data-bs-toggle="tab" href="#branding" role="tab" aria-controls="branding" aria-selected="false">Branding</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="books-tab" data-bs-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="false">Books</a>
+            </li>
+        </ul>
+        <div class="tab-content mt-4" id="projectsTabsContent">
+            <!-- All Projects Tab -->
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="row">
+                    <!-- Project 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-image position-relative">
+                            <img src="https://media.licdn.com/dms/image/C5112AQHDe4avueVZfQ/article-cover_image-shrink_600_2000/0/1520155749208?e=2147483647&v=beta&t=m7-XarrpGq-KispGODfa2DzVlCm8g5NXA7PtY5OTwl4" alt="Project 1" class="img-fluid">
+                            <div class="project-overlay">
+                                <h4>Project 1</h4>
+                                <p>Description of Project 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-image position-relative">
+                            <img src="https://www.digitalsilk.com/wp-content/uploads/2022/09/best-tech-websites-hero-image.jpg" alt="Project 2" class="img-fluid">
+                            <div class="project-overlay">
+                                <h4>Project 2</h4>
+                                <p>Description of Project 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-image position-relative">
+                            <img src="https://img.lovepik.com/background/20211022/large/lovepik-blue-tech-background-image_401949886.jpg" alt="Project 3" class="img-fluid">
+                            <div class="project-overlay">
+                                <h4>Project 3</h4>
+                                <p>Description of Project 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Project 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-image position-relative">
+                            <img src="https://png.pngtree.com/background/20220721/original/pngtree-internet-technology-city-composite-photography-picture-image_1695293.jpg" alt="Project 4" class="img-fluid">
+                            <div class="project-overlay">
+                                <h4>Project 4</h4>
+                                <p>Description of Project 4.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-image position-relative">
+                            <img src="https://png.pngtree.com/thumb_back/fw800/background/20240520/pngtree-blue-light-future-city-and-technology-background-image_15795624.jpg" alt="Project 5" class="img-fluid">
+                            <div class="project-overlay">
+                                <h4>Project 5</h4>
+                                <p>Description of Project 5.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-image position-relative">
+                            <img src="https://as2.ftcdn.net/v2/jpg/02/07/84/71/1000_F_207847192_76gVEfvfpoJmhk9LwPmrGTnPDfHIz2mw.jpg" alt="Project 6" class="img-fluid">
+                            <div class="project-overlay">
+                                <h4>Project 6</h4>
+                                <p>Description of Project 6.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other tabs can follow the same structure as 'All' tab -->
+        </div>
+    </div>
+</section>
+
+<!--  6-->
+
+
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form Section -->
+            <div class="col-md-6">
+                <h2 class="text-center">Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+            <!-- Map Section -->
+            <div class="col-md-6">
+                <div class="map-container">
+                    <!-- Replace with your map iframe or embed code -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.6744317074677!2d-104.99211728414806!3d39.73923577945781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78fe96e4f4b9%3A0x81a6b062f6b6472a!2sDenver%2C%20CO!5e0!3m2!1sen!2sus!4v1631698870731!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776869.4827869623!2d71.3269721!3d22.41588245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1723739692204!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7 -->
+
+<footer class="footer bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>1234 Street Name, City, Country</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +931 314 5092</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-white">Home</a></li>
+                    <li><a href="#about" class="text-white">About</a></li>
+                    <li><a href="#services" class="text-white">Services</a></li>
+                    <li><a href="#contact" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+                <p>&copy; 2024 Your Company. All rights reserved. Designed by Sujit. 🚀</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
